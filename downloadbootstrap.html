@@ -14,13 +14,13 @@
     #yellow{
         background-color: #27122f;
         height:500px;
+        box-shadow:3px 2px 3px grey;
     }
     .row{
         background-color: rgb(255, 247, 19);
-        margin:10px;
         padding:15px;
     }
-    .col-6,
+    .col-md-6,
     .col-9,
     .col-3{
         padding:15px;
@@ -29,7 +29,7 @@
          font-weight: bolder;
          text-align:center;
     }
-    .col-6{
+    .col-md-6{
           background-color:#b03939;
     }
     .col-3{
@@ -41,23 +41,20 @@
    </style>
 </head>
 <body>
-<div class="container" id="yellow">
+    <div class="container" id="yellow">   <div class="row" style="background-color: #40115a;"><div class="col-12">Row</div></div>
        <a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
 <input class="btn btn-primary" type="button" value="Input">
 <input class="btn btn-primary" type="submit" value="Submit">
 <input class="btn btn-primary" type="reset" value="Reset">
 <div class="row">
-    <div class="col-6">COL-6</div>
-    <div class="col-6" style="background-color: #112919;">
+    <div class="col-md-6">COL-6</div>
+    <div class="col-md-6" style="background-color: #112919;">
     <div class="row" style="background-color: #fff;">
             <div class="col-9">COL-8</div>
 <div class="col-3">COL-4</div>
     </div>
-    </div>
-    
-</div>
-
+    </div></div>
 </body>
 <script src="downloads/js/bootstrap.min.js"></script>
 
