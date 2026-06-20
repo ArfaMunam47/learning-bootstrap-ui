@@ -5,20 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="downloads/bootstrap.min.css">
-   
+   <style>
+    *{
+        box-sizing:border-box;
+        margin:0px;
+        padding:0px;
+    }
+    #yellow{
+        background-color: #27122f;
+        height:500px;
+    }
+    .row{
+        background-color: rgb(255, 247, 19);
+        margin:10px;
+        padding:15px;
+    }
+    .col-6,
+    .col-9,
+    .col-3{
+        padding:15px;
+         font-size: 20px;
+         color:black;
+         font-weight: bolder;
+         text-align:center;
+    }
+    .col-6{
+          background-color:#b03939;
+    }
+    .col-3{
+          background-color:rgb(15, 107, 4);
+    }
+    .col-9{
+          background-color:pink;
+    }
+   </style>
 </head>
-<body style="background-color: #414141;padding:20px";>
-   <a class="btn btn-primary" href="#" role="button">Link</a>
+<body>
+<div class="container" id="yellow">
+       <a class="btn btn-primary" href="#" role="button">Link</a>
 <button class="btn btn-primary" type="submit">Button</button>
 <input class="btn btn-primary" type="button" value="Input">
 <input class="btn btn-primary" type="submit" value="Submit">
 <input class="btn btn-primary" type="reset" value="Reset">
+<div class="row">
+    <div class="col-6">COL-6</div>
+    <div class="col-6" style="background-color: #112919;">
+    <div class="row" style="background-color: #fff;">
+            <div class="col-9">COL-8</div>
+<div class="col-3">COL-4</div>
+    </div>
+    </div>
+    
+</div>
+
 </body>
 <script src="downloads/js/bootstrap.min.js"></script>
-<!-- KEY POINTS ABOUT BOOTSRAPT -->
-<!-- 4 PARTS _________ 1- BREAKPOINT 2-CONTAINER (wrapper that contain website) 3-ROW 4-COLUMNS -->
-<!-- ROW CONTAIN COLUMNS-->
-<!-- EACH COLUMN MUST HAVE A ROW PARENT -->
-<!-- DIV WITH CLASS COL-8 MEANS _______ CREATE A DIV WITH WIDTH OF 8 COLUMNS -->
+
 
 </html>
