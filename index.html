@@ -15,18 +15,34 @@
     </style>
 </head>
 <body style="font-size: 30px; font-family:sans-serif ; background-color: #ccc7ba; padding: 20px;">
-    <div class="container">
-        <div class="row bg-warning justify-content-center" style="height:400px">  <div class="col bg-secondary ">2</div>
-            <div class="col bg-info">3</div></div>
-    </div>
+   <div class="container bg-success" style="height:200px">
+   <div class="row bg-warning" style="height:200px;">
+    <!-- REORDERING -->
+     <!-- COLUMN OFFSET -->
+        <div class="col-3 offset-lg-1 bg-primary order-lg-4">1</div>
+        <div class="col-3 bg-secondary order-lg-3">2</div>
+        <div class="col-3 offset-md-2 bg-info order-lg-2">3</div>
+        <div class="col-3 bg-danger order-lg-1">4</div>
 
+   </div>
+   </div>
+    <!-- VERTICAL ALLIGNMENT -->
+     <!-- <div class="container bg-success" style="height:400px"><div class="row bg-danger" style="height:400px;">
+        <div class="col-3 bg-primary" style="align-self:start;">1</div>
+        <div class="col-3 bg-secondary" style="align-self:center;">2</div>
+        <div class="col-3 bg-info" style="align-self:end;">3</div>
+        <div class="col-3 bg-warning">4</div>
+     </div></div> -->
 
-            <!-- <div class="col bg-primary align-self-center">1</div>   
-              ///////// HORIZONTAL ALIGNMENT
-            <div class="col bg-secondary align-self-start">2</div>
-            <div class="col bg-info">3</div>
-            <div class="col bg-danger align-self-center">4</div>
-         -->
+    <!-- HORIZONTAL ALLIGNMENT
+<!-- <div class="container bg-success">
+       <!--  start end center space around between and evenly -->
+    <!-- <div class="row bg-danger" style="height:400px;justify-content:space-evenly;">
+        <div class="col-3 bg-primary">1</div>
+        <div class="col-3 bg-secondary">2</div>
+     </div></div> -->
+
+        
 
 
 
