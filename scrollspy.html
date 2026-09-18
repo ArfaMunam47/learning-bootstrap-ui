@@ -1,0 +1,108 @@
+<!-- SCROLLSPY -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLLSPY</title>
+      <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css"> 
+</head>
+<body margin="0" style="font-family:sans-serif ; background-color: #ccc7ba; padding: 20px;">
+    <nav id="navbar-example2" class="navbar bg-body-tertiary col-8 px-3 mb-3" style="border:2px solid black;box-shadow:2px 3px 4px grey;">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">First</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Second</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example col-8 bg-success p-3 rounded-2" tabindex="0" style="height:220px;overflow-y: scroll; padding:20px;">
+  <h4 id="scrollspyHeading1">First heading</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!
+  </p>
+  <h4 id="scrollspyHeading2">Second heading</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!
+  </p>
+  <h4 id="scrollspyHeading3">Third heading</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!
+  </p>
+  <h4 id="scrollspyHeading4">Fourth heading</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!
+  </p>
+  <h4 id="scrollspyHeading5">Fifth heading</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!
+  </p>
+</div>
+<br>
+<br>
+<br>
+<hr>
+<!-- NESTED SCROLLSPY -->
+ <div class="row">
+  <div class="col-3">
+    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">Item 1</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+        </nav>
+        <a class="nav-link" href="#item-2">Item 2</a>
+        <a class="nav-link" href="#item-3">Item 3</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+        </nav>
+      </nav>
+    </nav>
+  </div>
+
+  <div class="text-white col-8">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 bg-danger" tabindex="0" style="border:2px solid black;box-shadow:5px 3px 5px black;overflow-y:scroll;height:400px;padding:20px;">
+      <div id="item-1">
+        <h4>Item 1</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-1-1">
+        <h5>Item 1-1</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-1-2">
+        <h5>Item 1-2</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-2">
+        <h4>Item 2</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-3">
+        <h4>Item 3</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-3-1">
+        <h5>Item 3-1</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+      <div id="item-3-2">
+        <h5>Item 3-2</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, iste!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
